@@ -1,0 +1,47 @@
+@import './variables';
+
+
+.footer {
+    margin-top: 50px;
+    color: $bgDark;
+    @include centered(50px);
+    font-family: 'Poppins', serif;
+    font-weight: 700;
+   
+}
+
+.footer-items-list {
+    a {
+        &:link {
+            color: $bgDark;
+            list-style-type: none;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline $bgDark;
+            }
+        }
+    }
+}
+
+li {
+    margin-right: 28px;
+    display: inline;
+}
+
+.fab {
+    margin: 30px;
+    padding: 3px;
+    margin-bottom: 20px;
+    color: $textColor;
+    background-color: $bgDark;
+    border: solid $bgDark;
+    border-radius: 100%;
+}
+
+.copywrite {
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+}

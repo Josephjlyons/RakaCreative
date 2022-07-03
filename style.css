@@ -1,9 +1,48 @@
-.nav-container {
-
+/* .nav-container {
     background: #333333;
     color: #FFFFFF;
     height: 167px;
     justify-content: center;
+
+}
+
+// underscore filename then import like @import './header' in scss file 
+nav a:link {
+    color: #FFFFFF;
+    font-family: 'Poppins', serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 16px;
+    margin-top: 50px;
+    &:hover{
+        text-decoration: underline #DA3559;
+        color: #FFFFFF
+    }
+} 
+
+
+
+
+.nav-container {
+    background: #333333;
+    color: #FFFFFF;
+    height: 167px;
+    justify-content: center;
+
+}
+
+nav a:link {
+    color: #FFFFFF;
+    font-family: 'Poppins', serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 16px;
+    margin-top: 50px;
+
+}
+
+.nav a:link:hover {
+    text-decoration: underline red;
 }
 
 .logo {
@@ -16,20 +55,8 @@
     color: #FFFFFF;
 }
 
-.nav a:link {
-    color: #FFFFFF;
-    font-family: 'Poppins', serif;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 16px;
-    margin-top: 50px;
-}
 
-.nav a:link:hover {
-    text-decoration: underline red;
-}
 
-/* HEADER STYLING */
 .header {
     background-image: url('./images/hero-photo.jpg');
     background-size: cover;
@@ -80,18 +107,18 @@
 
 .sub-header hr {
     width: 246px;
-    margin-top: 70px; 
+    margin-top: 70px;
     margin-left: auto;
     margin-right: auto;
     color: #DA3559;
     border-top: 4px solid;
     height: 10px;
-  
+
 }
 
 
 /* ABOUT STYLING */
-.about-wrapper {
+/* .about-wrapper {
     justify-content: center;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -126,7 +153,7 @@
 }
 
 
-/* QUOTE STYLING */
+
 
 .quote {
     text-align: center;
@@ -276,7 +303,6 @@
     letter-spacing: -0.01em;
 }
 
-/* FOOTER STYLING */
 
 .footer {
     margin-top: 50px;
@@ -319,8 +345,5 @@ li {
     line-height: 16px;
 }
 
-@media (max-width: 700px) {
-    .row, .navbar {   
-      flex-direction: column;
-    }
-  }
+
+/* Media BreakPoints */

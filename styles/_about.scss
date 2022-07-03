@@ -1,0 +1,36 @@
+@import './variables';
+
+.about-wrapper {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 1200px;
+    height: 460px;
+    margin: 0 auto;
+    padding-top: 157px;
+    margin-bottom: 155px;
+}
+
+.about-text {
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 19px;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+    width: 550px;
+    height: 366px;
+    padding-right: 96px;
+
+    h2 {
+        font-family: 'Poppins', serif;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 60px;
+    }
+}
+
+.about-image {
+    background-image: url('../images/office-image.jpg');
+    width: 550px;
+    height: 450px;
+    background-size: cover;
+}

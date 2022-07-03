@@ -1,0 +1,22 @@
+$textColor : #FFFFFF;
+$bgDark : #333333;
+
+
+@mixin centered($marginTop) {
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    margin-top: $marginTop
+}
+
+@mixin learnMoreBtn {
+    background-color: #DA3559;
+    color: $textColor;
+    font-weight: 700;
+    width: 186px;
+    height: 58px;
+    
+    &:hover {
+        background-color: #AE2A47;
+    }
+}

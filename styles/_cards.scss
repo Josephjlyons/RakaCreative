@@ -1,0 +1,58 @@
+@import './variables';
+
+.cards {
+    @include centered('');
+    display: grid;
+
+    h1 {
+        font-family: 'Poppins', serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 60px;
+        text-align: center;
+        margin-bottom: 67px;
+        color: $bgDark;
+    }
+
+    a {
+        &:link {
+            font-family: 'Poppins', serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 38px;
+            text-decoration-line: underline;
+            color: #DA3559;
+        }
+    }
+}
+
+.card {
+    padding: 10px;
+    margin: 60px;
+    width: 360px;
+    height: 644px;
+
+    p {
+        &:first-child {
+            font-family: 'Poppins', serif;
+            font-size: 24px;
+            line-height: 34px;
+            font-weight: 600;
+            color: $bgDark;
+        }
+
+        &:nth-last-child(2) {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 19px;
+            line-height: 30px;
+            letter-spacing: 0.01em;
+            color: $bgDark;
+        }
+    }
+
+    &:hover {
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+    }
+}

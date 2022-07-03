@@ -1,0 +1,42 @@
+@import './variables';
+
+.nav-container {
+    background: $bgDark;
+    color: $textColor;
+    height: 167px;
+    justify-content: center;
+}
+
+nav {
+    a {
+        &:link {
+            color: $textColor;
+            font-family: 'Poppins', serif;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 16px;
+            margin-top: 50px;
+        }
+    }
+}
+
+.nav {
+    a {
+        &:link {
+            &:hover {
+                text-decoration: underline red;
+                color: $textColor;
+            }
+        }
+    }
+}
+
+.logo {
+    margin-top: 50px;
+    margin-left: 65px;
+}
+
+.contact-btn {
+    background-color: #DA3559;
+    color: $textColor
+}
