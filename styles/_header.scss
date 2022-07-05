@@ -5,7 +5,7 @@
     background-size: cover;
     background-position: center;
     height: 700px;
-    width: 1440px;
+    width: 100%;
 
     h2 {
         font-size: 65px;
@@ -54,5 +54,67 @@
         color: #DA3559;
         border-top: 4px solid;
         height: 10px;
+    }
+}
+
+@media screen and(min-width: $desktop) {
+    .header{
+        background: url('../images/hero-photo.jpg');
+        width: 100%;
+        background-size: cover;
+        h2{
+            width: 50%;
+        }
+     
+    }
+}
+
+@media screen and (max-width: $laptop){
+    .header{
+        h2{
+            font-size: 2.87rem;
+            width: 50%;
+        }
+        p{
+            font-size: 1.5rem;
+            width: 50%;
+        }
+           
+        
+    }
+    .sub-header p{
+        height: 100%;
+        width: 95%;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1.1rem;
+        overflow: hidden;
+        
+    }
+    
+}
+
+@media screen and (max-width: $phone){
+    .header{
+        h2{
+           margin-right: 50%;
+            font-size: 1.6rem;
+            width: 35%;
+        }
+        p{
+            font-size: 1.2rem;
+            width: 30%;
+        }
+           
+        
+    }
+    .sub-header p{
+        height: 100%;
+        width: 95%;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: .85rem;
+        overflow: hidden;
+
     }
 }

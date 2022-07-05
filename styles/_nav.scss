@@ -1,26 +1,31 @@
 @import './variables';
 
-.nav-container {
+
+.container-fluid {
     background: $bgDark;
     color: $textColor;
     height: 167px;
     justify-content: center;
 }
 
+
+
+
 nav {
     a {
         &:link {
+            padding: 0px;
             color: $textColor;
             font-family: 'Poppins', serif;
             font-weight: 700;
             font-size: 20px;
-            line-height: 16px;
             margin-top: 50px;
+          
         }
     }
 }
 
-.nav {
+nav {
     a {
         &:link {
             &:hover {
@@ -39,4 +44,29 @@ nav {
 .contact-btn {
     background-color: #DA3559;
     color: $textColor
+}
+
+@media screen and(max-width: $laptop ){
+    .container-fluid{
+        width:1024px
+        
+    }
+}
+
+@media screen and (max-width: $phone){
+   .container-fluid{
+       width: 399px;
+   }
+
+.nav {
+    a {
+        &:link {
+            margin: 0px;
+            font-size: 10px;
+        
+          
+        }
+    }
+}
+   
 }

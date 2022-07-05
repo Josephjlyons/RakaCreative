@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Poppins:wght@400;500;600;700&display=swap');
+
+$desktop: 1200px;
+$laptop: 1024px;
+$tablet: 768px;
+$phone: 375px;
+
+
 $textColor : #FFFFFF;
 $bgDark : #333333;
+
 
 
 @mixin centered($marginTop) {
@@ -15,7 +24,7 @@ $bgDark : #333333;
     font-weight: 700;
     width: 186px;
     height: 58px;
-    
+
     &:hover {
         background-color: #AE2A47;
     }

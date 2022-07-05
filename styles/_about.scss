@@ -1,9 +1,9 @@
 @import './variables';
 
 .about-wrapper {
-    justify-content: center;
+    justify-items: center;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     width: 1200px;
     height: 460px;
     margin: 0 auto;
@@ -33,4 +33,109 @@
     width: 550px;
     height: 450px;
     background-size: cover;
+}
+
+
+@media screen and (max-width: $laptop) {
+
+    .about-wrapper {
+        margin-bottom: 500px !important;
+        height: 700px;
+        display: grid;
+        grid-template-rows: 500px (auto-fill, 100px);
+        grid-template-columns: 750px (3,1fr);
+        gap:50px;
+
+    }
+
+    .about-text {
+        width: 100%;
+        @include centered('');
+        grid-column: 1/1;
+        margin-left: 8%;
+        font-size: 1.75rem;
+        h2 {
+            @include centered('');
+            font-size: 2.87rem;
+            width: 50%;
+        }
+
+    }
+
+    .about-image {
+        width: 750px;
+        height: 650px;
+        grid-column: 1;
+        grid-row: 2/5;
+    }
+}
+
+@media screen and (max-width: $tablet) {
+
+    .about-wrapper {
+        margin-bottom: 500px !important;
+        height: 700px;
+        display: grid;
+        grid-template-rows: 500px (auto-fill, 100px);
+        grid-template-columns: 750px (3,1fr);
+        gap:50px;
+
+    }
+
+    .about-text {
+        width: 100%;
+        @include centered('');
+        grid-column: 1/1;
+        margin-left: 5%;
+        font-size: 1.75rem;
+        h2 {
+            @include centered('');
+            font-size: 2.87rem;
+            width: 50%;
+        }
+
+    }
+
+    .about-image {
+        width: 750px;
+        height: 650px;
+        grid-column: 1;
+        grid-row: 2/5;
+    }
+}
+
+@media screen and (max-width: $phone){
+    .about-wrapper {
+        @include centered('');
+        // margin-bottom: 100px !important;
+        height: 100%;
+        display: grid;
+        grid-template-rows: 300px (auto-fill, 100px);
+        grid-template-columns: 750px (3,1fr);
+        gap:50px;
+
+    }
+
+    .about-text {
+        width: 95%;
+        margin-right: 50%;
+        @include centered('');
+        grid-column: 1/1;
+        font-size: 1.5rem;
+        h2 {
+            @include centered('');
+            font-size: 1.87rem;
+            width: 50%;
+        }
+
+    }
+
+    .about-image {
+      margin-top: 200px;
+        width: 350px;
+        height: 250px;
+        grid-column: 1;
+        grid-row: 2/5;
+    }
+
 }

@@ -1,9 +1,15 @@
 @import './variables';
 
+.card-header{
+    @include centered('');
+    font-family: 'Poppins', serif;
+    font-size: 50px;
+    font-weight: 700;
+    color:#333333;
+}
+
 .cards {
     @include centered('');
-    display: grid;
-
     h1 {
         font-family: 'Poppins', serif;
         font-style: normal;
@@ -30,9 +36,9 @@
 
 .card {
     padding: 10px;
-    margin: 60px;
-    width: 360px;
+    margin: 24px;
     height: 644px;
+
 
     p {
         &:first-child {
